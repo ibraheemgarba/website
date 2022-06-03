@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Sign Up</title>
+		<link rel="stylesheet" href="sample_website.css">
+	</head>
+	<body>
+		<div id="all" style="text-align: center">
+			<div class="navbar">
+						<b style="color: blue; font-size: 20px; float: left; padding: 8px 16px;">StudentGuide</b>
+						<a href='index.html'>Homepage</a>
+						<a href='sample_website_tutorials.html'>Practice</a>
+						<div class="dropdown">
+							<button class="dropbtn" onclick="myFunction()">  Tools  </button>
+							<div class="dropdown-content" id="myDropdown">
+								<a href="sample_website_GPAcalculator .html">GPA Calculator</a>
+								<a href="sample_website_teacherContacts.html">Teacher Contacts</a>
+							</div>
+						</div>
+						<a href='sample_website_meeeee.html'>Ibraheem CV</a>
+						<a href='sample_website_signup.html'>My Contacts</a><br>
+						<button id="signupbtn"><a href="sample_website_signup.html">Log in</a></button>
+			</div><br><br>
+			<div class="g_f">
+				<img src="google.jpg" style="height: 25px; width: 25px"></img><a href="https://www.google.com"><u style="text-align: center">Sign in with Google Account</u></a><br><br>
+				<img src="facebook.PNG" style="height: 25px; width: 25px"></img><a href="https://www.facebook.com"><u style="text-align: center">Sign in with Facebook</u></a><br><br>
+			</div>
+			<form>
+				<fieldset>
+					<legend>Sign Up</legend><br><br>
+					<div>
+						<label>Email:</label>
+						<input type="email" value='johndoe@gmail.com' style="text-align:center; border: 1px solid black"><br><br><br>
+						<label>Password:</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<input type="password" value="password" style="text-align:center; border: 1px solid black"><br><br><br>
+					</div>
+					<input type="submit" value="Sign in" style="text-align:center; background-color: white; border: 1px solid black; cursor: pointer" onclick="myfunction2()">
+				</fieldset>
+			</form><br><br>
+			<hr>
+			<div class="info">
+					<span style="color: gray; font-size: 20px"><u>Contact information</u></span><br>
+					<img src="phone.jpg" style="height: 30px; width: 30px"></img>+101 0912 345 5678<br>
+					<img src="mail.jpg" style="height: 30px; width: 30px"></img>ibraheem@gmail.com<br>
+			</div>
+		<script>
+			function myFunction() {
+				document.getElementById("myDropdown").classList.toggle("show");
+				console.log("It works")
+			}
+			function myfunction2() {
+				alert("Thank you for your Feedback!")
+			}
+		</script>
+	</body>
+</html>

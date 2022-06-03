@@ -1,0 +1,304 @@
+<!doctype html>
+<html>
+	<head>
+		<title>GPA Calculator</title>
+		<link rel="stylesheet" href="sample_website.css">
+		<style>
+			td{
+				text-align: center;
+				color: gray;
+				height: 58px
+			}
+			th{
+				color: gray
+			}
+			input{
+				text-decoration: none;
+				border-radius: 0px;
+				text-align: center;
+				border: 0px;
+				color: gray;
+				height: inherit;
+				width: 150px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="all">
+			<div class="navbar">
+						<b style="color: blue; font-size: 20px; float: left; padding: 8px 16px;">StudentGuide</b>
+						<a href='index.html'>Homepage</a>
+						<a href='sample_website_tutorials.html'>Practice</a>
+						<div class="dropdown">
+							<button class="dropbtn" onclick="myFunction()">  Tools  </button>
+							<div class="dropdown-content" id="myDropdown">
+								<a href="sample_website_GPAcalculator .html">GPA Calculator</a>
+								<a href="sample_website_teacherContacts.html">Teacher Contacts</a>
+							</div>
+						</div>
+						<a href='sample_website_meeeee.html'>Ibraheem CV</a>
+						<a href='sample_website_signup.html'>My Contacts</a><br>
+						<button id="signupbtn"><a href="sample_website_signup.html">Log in</a></button>
+			</div><br>
+			<div>Session: 2021-2022 (Second Semester)</div><br>
+			<div>Department: Software Engineering</div><br>
+			<div>Name: <input type="text" style="width:200px; border: 1px solid gray; border-radius: 25px;"/></div><br>
+			<div>Student ID: <input type="number" style="border: 1px solid gray; border-radius: 25px;"/></div><br>
+		</div>
+			<table id="table" border="1px solid gray">
+				<tr>
+					<th>Code</th>
+					<th>Subject</th>
+					<th>Credit</th>
+					<th>Attendance (%)</th>
+					<th>Assignment 1 (%)</th>
+					<th>Assignment 2 (%)</th>
+					<th>Midterm Score (%)</th>
+					<th>Finals Score (%)</th>
+					<th>Total Score (%)</th>
+					<th>Grade</th>
+				</tr>
+				<tr>
+					<td>CSC 102</td>
+					<td style="color: blue">Problem Solving and Algorithms</td>
+					<td>3</td>
+					<td><input id="att1" type="number"/></td>
+					<td><input id="ass1_1" type="number"/></td>
+					<td><input id="ass2_1" type="number"/></td>
+					<td><input id="mid1" type="number"/></td>
+					<td><input id="fin1" type="number"/></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>GST 102</td>
+					<td style="color: blue">Use of English II</td>
+					<td>2</td>
+					<td><input id="att2" type="number"/></td>
+					<td><input id="ass1_2" type="number"/></td>
+					<td><input id="ass2_2" type="number"/></td>
+					<td><input id="mid2" type="number"/></td>
+					<td><input id="fin2" type="number"/></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>GST 104</td>
+					<td style="color: blue">Logic, Philosophy, and Human Existence</td>
+					<td>2</td>
+					<td><input id="att3" type="number"/></td>
+					<td><input id="ass1_3" type="number"/></td>
+					<td><input id="ass2_3" type="number"/></td>
+					<td><input id="mid3" type="number"/></td>
+					<td><input id="fin3" type="number"/></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>GST 105</td>
+					<td style="color: blue">IT and Library Skills</td>
+					<td>2</td>
+					<td><input id="att4" type="number"/></td>
+					<td><input id="ass1_4" type="number"/></td>
+					<td><input id="ass2_4" type="number"/></td>
+					<td><input id="mid4" type="number"/></td>
+					<td><input id="fin4" type="number"/></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>GST 166/164</td>
+					<td style="color: blue">French/Arabic</td>
+					<td>2</td>
+					<td><input id="att5" type="number"/></td>
+					<td><input id="ass1_5"type="number"/></td>
+					<td><input id="ass2_5" type="number"/></td>
+					<td><input id="mid5" type="number"/></td>
+					<td><input id="fin5" type="number"/></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>MAT 102</td>
+					<td style="color: blue">General Mathematics II</td>
+					<td>3</td>
+					<td><input id="att6" type="number"/></td>
+					<td><input id="ass1_6" type="number"/></td>
+					<td><input id="ass2_6" type="number"/></td>
+					<td><input id="mid6" type="number"/></td>
+					<td><input id="fin6" type="number"/></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>PHY 102</td>
+					<td style="color: blue">General Physics II</td>
+					<td>3</td>
+					<td><input id="att7" type="number"/></td>
+					<td><input id="ass1_7" type="number"/></td>
+					<td><input id="ass2_7" type="number"/></td>
+					<td><input id="mid7" type="number"/></td>
+					<td><input id="fin7" type="number"/></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>PHY 108</td>
+					<td style="color: blue">General Practical Physics</td>
+					<td>1</td>
+					<td><input id="att8" type="number"/></td>
+					<td><input id="ass1_8" type="number"/></td>
+					<td><input id="ass2_8" type="number"/></td>
+					<td><input id="mid8" type="number"/></td>
+					<td><input id="fin8" type="number"/></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>SEN 104</td>
+					<td style="color: blue">Introduction to Web Technologies</td>
+					<td>3</td>
+					<td><input id="att9" type="number"/></td>
+					<td><input id="ass1_9" type="number"/></td>
+					<td><input id="ass2_9" type="number"/></td>
+					<td><input id="mid9" type="number"/></td>
+					<td><input id="fin9" type="number"/></td>
+					<td></td>
+					<td></td>
+			</tr>
+		</table>
+			<div style="text-align:center; color:blue; height: 250px; font-size: 20px"><br><br><br><button style="text-decoration: none; background-color: white; color: blue; border-radius:25px; border:1px solid blue; float:left; margin-left: 120px; cursor:pointer" id="calcbtn" onclick="calculate()">Calculate</button>&nbsp&nbsp&nbsp Total Credits: <span style="color:gray" id="sumCredit"></span>&nbsp&nbsp&nbsp Average: <span style="color:gray" id="totalAvg"></span>&nbsp&nbsp&nbsp GPA: <span style="color:gray" id="gpa"></span>&nbsp&nbsp&nbsp Rank: <span style="color:gray" id="rank"></span>&nbsp&nbsp&nbsp <button onclick="window.print()" style="text-decoration: none; background-color: white; color: blue; border-radius:25px; border:1px solid blue; float:right; margin-left: 120px; cursor:pointer; width: 70px">Print</button></div>
+		<script>
+			function calculate(){
+				totalScore();
+				grading();
+				totalAvg();
+				calcgpa();
+				ranking();
+			}
+			
+			var sumVal2_1 = 0;
+			var sumVal2_2 = 0;
+			var sumVal2_3 = 0;
+			var sumVal2_4 = 0;
+			var sumVal2_5 = 0;
+			var sumVal2_6 = 0;
+			var sumVal2_7 = 0;
+			var sumVal2_8 = 0;
+			var sumVal2_9 = 0;
+			function totalScore(){
+				var sumVal = 0;
+				sumVal = (parseInt(document.getElementById("att1").value) / 100 * 10) + (parseInt(document.getElementById("ass1_1").value) / 100 * 10) + (parseInt(document.getElementById("ass2_1").value) / 100 * 10) + (parseInt(document.getElementById("mid1").value) / 100 * 30) + (parseInt(document.getElementById("fin1").value) / 100 * 40);
+				
+				sumVal2_1 = sumVal.toFixed(2);
+				table.rows[1].cells[8].innerHTML = sumVal2_1;
+				console.log(sumVal);
+				
+				var sumVal2 = 0;
+				sumVal2 = (parseInt(document.getElementById("att2").value) / 100 * 10) + (parseInt(document.getElementById("ass1_2").value) / 100 * 10) + (parseInt(document.getElementById("ass2_2").value) / 100 * 10) + (parseInt(document.getElementById("mid2").value) / 100 * 30) + (parseInt(document.getElementById("fin2").value) / 100 * 40);
+				
+				sumVal2_2 = sumVal2.toFixed(2);
+				table.rows[2].cells[8].innerHTML = sumVal2_2;
+				console.log(sumVal2);
+				
+				var sumVal3 = 0;
+				sumVal3 = (parseInt(document.getElementById("att3").value) / 100 * 10) + (parseInt(document.getElementById("ass1_3").value) / 100 * 10) + (parseInt(document.getElementById("ass2_3").value) / 100 * 10) + (parseInt(document.getElementById("mid3").value) / 100 * 30) + (parseInt(document.getElementById("fin3").value) / 100 * 40);
+				
+				sumVal2_3 = sumVal3.toFixed(2);
+				table.rows[3].cells[8].innerHTML = sumVal2_3;
+				console.log(sumVal3);
+				
+				var sumVal4 = 0;
+				sumVal4 = (parseInt(document.getElementById("att4").value) / 100 * 10) + (parseInt(document.getElementById("ass1_4").value) / 100 * 10) + (parseInt(document.getElementById("ass2_4").value) / 100 * 10) + (parseInt(document.getElementById("mid4").value) / 100 * 30) + (parseInt(document.getElementById("fin4").value) / 100 * 40);
+				
+				sumVal2_4 = sumVal4.toFixed(2);
+				table.rows[4].cells[8].innerHTML = sumVal2_4;
+				console.log(sumVal4);
+				
+				var sumVal5 = 0;
+				sumVal5 = (parseInt(document.getElementById("att5").value) / 100 * 10) + (parseInt(document.getElementById("ass1_5").value) / 100 * 10) + (parseInt(document.getElementById("ass2_5").value) / 100 * 10) + (parseInt(document.getElementById("mid5").value) / 100 * 30) + (parseInt(document.getElementById("fin5").value) / 100 * 40);
+				
+				sumVal2_5 = sumVal5.toFixed(2);
+				table.rows[5].cells[8].innerHTML = sumVal2_5;
+				console.log(sumVal5);
+				
+				var sumVal6 = 0;
+				sumVal6 = (parseInt(document.getElementById("att6").value) / 100 * 10) + (parseInt(document.getElementById("ass1_6").value) / 100 * 10) + (parseInt(document.getElementById("ass2_6").value) / 100 * 10) + (parseInt(document.getElementById("mid6").value) / 100 * 30) + (parseInt(document.getElementById("fin6").value) / 100 * 40);
+				
+				sumVal2_6 = sumVal6.toFixed(2);
+				table.rows[6].cells[8].innerHTML = sumVal2_6;
+				console.log(sumVal6);
+				
+				var sumVal7 = 0;
+				sumVal7 = (parseInt(document.getElementById("att7").value) / 100 * 10) + (parseInt(document.getElementById("ass1_7").value) / 100 * 10) + (parseInt(document.getElementById("ass2_7").value) / 100 * 10) + (parseInt(document.getElementById("mid7").value) / 100 * 30) + (parseInt(document.getElementById("fin7").value) / 100 * 40);
+				
+				sumVal2_7 = sumVal7.toFixed(2);
+				table.rows[7].cells[8].innerHTML = sumVal2_7;
+				console.log(sumVal7);
+				
+				var sumVal8 = 0;
+				sumVal8 = (parseInt(document.getElementById("att8").value) / 100 * 10) + (parseInt(document.getElementById("ass1_8").value) / 100 * 10) + (parseInt(document.getElementById("ass2_8").value) / 100 * 10) + (parseInt(document.getElementById("mid8").value) / 100 * 30) + (parseInt(document.getElementById("fin8").value) / 100 * 40);
+				
+				sumVal2_8 = sumVal8.toFixed(2);
+				table.rows[8].cells[8].innerHTML = sumVal2_8;
+				console.log(sumVal8);
+				
+				var sumVal9 = 0;
+				sumVal9 = (parseInt(document.getElementById("att9").value) / 100 * 10) + (parseInt(document.getElementById("ass1_9").value) / 100 * 10) + (parseInt(document.getElementById("ass2_9").value) / 100 * 10) + (parseInt(document.getElementById("mid9").value) / 100 * 30) + (parseInt(document.getElementById("fin9").value) / 100 * 40);
+				
+				sumVal2_9 = sumVal9.toFixed(2);
+				table.rows[9].cells[8].innerHTML = sumVal2_9;
+				console.log(sumVal9);
+			}
+			
+			function grading(){
+				for(var i = 1; i < 10; i++){
+					if(table.rows[i].cells[8].innerHTML >= 70){table.rows[i].cells[9].innerHTML = "A"}
+					else if(table.rows[i].cells[8].innerHTML >= 60){table.rows[i].cells[9].innerHTML = "B"}
+					else if(table.rows[i].cells[8].innerHTML >= 50){table.rows[i].cells[9].innerHTML = "C"}
+					else if(table.rows[i].cells[8].innerHTML >= 40){table.rows[i].cells[9].innerHTML = "D"}
+					else{table.rows[i].cells[9].innerHTML = "F"}
+				}
+			}
+			
+			var table = document.getElementById("table");
+			var sumValue = 0;
+			for(i = 1; i < table.rows.length; i++){
+				sumValue = sumValue + parseInt(table.rows[i].cells[2].innerHTML);
+			}
+			console.log(sumValue);
+			document.getElementById("sumCredit").innerHTML = sumValue + "credits";
+			
+			var avg = 0;
+			function totalAvg(){
+				var sumValue2 = 0;
+				for(var i = 1; i < 10; i++){
+					sumValue2 = sumValue2 + (parseInt(table.rows[i].cells[2].innerHTML)) * (parseFloat(table.rows[i].cells[8].innerHTML));
+				}
+				avg = (sumValue2) / (sumValue)
+				console.log(sumValue2);
+				var avg2 = avg.toFixed(2);
+				document.getElementById("totalAvg").innerHTML = avg2 + "%";
+			}
+			
+			var gpa = 0;
+			function calcgpa(){
+				gpa = (avg / 100) * 5;
+				var gpa2 = gpa.toFixed(2);
+				document.getElementById("gpa").innerHTML = gpa2;
+			}
+			
+			function ranking(){
+				if(gpa >= 4.5){document.getElementById("rank").innerHTML = "First Class"}
+				else if(gpa >= 3.5){document.getElementById("rank").innerHTML = "Second Class Upper"}
+				else if(gpa >= 2.5){document.getElementById("rank").innerHTML = "Second Class lower"}
+				else if(gpa >= 1.5){document.getElementById("rank").innerHTML = "Third Class"}
+				else{document.getElementById("rank").innerHTML = "Carry Over"}
+			}
+			
+			function myFunction() {
+				document.getElementById("myDropdown").classList.toggle("show");
+			}
+		</script>
+	</body>
+</html>

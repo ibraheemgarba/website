@@ -1,0 +1,243 @@
+/* Website Style Sheet */
+/* this is for the home page */
+body{
+	background-image: url("back2.jpg");
+}
+#all{
+	width: 800px;
+	padding: 250px;
+	padding-top: 0px;
+	padding-bottom: 0px
+}
+.navbar {
+  overflow: hidden;
+}
+.navbar a {
+	float: left;
+  font-size: 12px;
+  color: gray;
+  
+ padding: 14px 16px;
+  text-decoration: none;
+}
+.dropdown {
+ display: inline-block;
+ float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  padding: 14px 16px;
+  cursor: pointer;
+  font-size: 12px;  
+  border: none;
+  outline: none;
+  color: gray;
+  display: inline-block;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.navbar a:hover, .dropbtn:hover{
+  color: blue;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: gray;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.show {
+  display: block;
+}
+#signupbtn{
+	float: right;
+	height: 20px;
+	width: 90px;
+	background-color: white;
+	border-radius: 25px;
+	text-decoration: none;
+	border: 1px solid blue;
+}
+#signupbtn a{
+	padding-top: 1px;
+	color: blue;
+}
+#signupbtn a:hover{
+	color: white
+}
+#signupbtn:hover{
+	background-color: blue;
+	border: 1px solid white;
+}
+#title{
+	color: black;
+	height: 250px;
+	width: 800px;
+	font-size: 50px;
+}
+#content{
+	width: 100%;
+}
+#copyright{
+	background-color: #bfbfbf;
+	width: 100%;
+	height: 50px;
+}
+
+/* this is for the sign up and contact me page */
+
+.circle{
+	border-radius: 50%
+}
+fieldset{
+	margin: auto;
+	width: 50%;
+	border-radius: 25px;
+	border: 1px solid blue
+}
+input{
+	border-radius: 25px
+}
+input:hover{
+	color: blue
+}
+label{
+	color: gray
+}
+legend{
+	color: gray
+}
+u:hover{
+	color: blue
+}
+.g_f a{
+	font-size: 20px;
+	color: gray;
+}
+
+/* this is for about me page */
+
+.main{
+	width:100%;
+	height: 1000px
+}
+.left{
+	width:250px;
+	float:left;
+
+	color:black;
+	font-weight:bold;
+}
+.profile_pic{
+	width:250px;
+	height:200px;
+	background-image: url("lala.webp");
+	position:relative;
+	background-repeat:no-repeat;
+	background-position:center top;
+}
+.transparent{
+	width:250px;
+	height:50px;
+	font-size:15pt;
+	background-color:white;
+	opacity:0.6;
+	text-align:center;
+	font-weight:bold;
+	position:absolute;
+	bottom:0
+}
+.small_rect{
+	width:250px;
+	height:3px;
+	background-color:white;
+	position:absolute;
+	bottom:0
+}
+.big_rect{
+	color:white;
+	width:250px;
+	height:23px;
+	background-color:#505050;
+	text-align:center
+}
+.rating1{
+	height:10px;
+	width:100px;
+	background-color:white;
+	background-image: linear-gradient(to right, gray 0%, gray 95%, white 95%, white 100%);
+	border: 1px solid gray
+}
+.rating2{
+	height:10px;
+	width:100px;
+	background-color:white;
+	background-image: linear-gradient(to right, gray 0%, gray 70%, white 70%, white 100%);
+	border: 1px solid gray
+}
+.rating3{
+	height:10px;
+	width:100px;
+	background-color:white;
+	background-image: linear-gradient(to right, gray 0%, gray 30%, white 30%, white 100%);
+	border: 1px solid gray
+}
+.rating4{
+	height:10px;
+	width:100px;
+	background-color:white;
+	background-image: linear-gradient(to right, gray 0%, gray 80%, white 80%, white 100%);
+	border: 1px solid gray
+}
+.rating5{
+	height:10px;
+	width:100px;
+	background-color:white;
+	background-image: linear-gradient(to right, gray 0%, gray 60%, white 60%, white 100%);
+	border: 1px solid gray
+}
+.right{
+	float: right;
+	width: 550px
+}
+.big_rect2{
+	height: 33px;
+	color: white;
+	text-align: left;
+	background-color:#737373;
+	width: 550px;
+	float: right
+}
+.big_rect2 h2{
+	padding-left: 40px;
+	margin-top: 5px;
+	color: white;
+	font-size: 20px
+}
+div.right p{
+	padding-top: 0px;
+	font-family:calibri;
+	text-align:left
+}
+li{
+	color:black;
+	text-align:left
+}
+li span{
+	font-family:calibri;
+	color:black;
+	text-align:left
+}
